@@ -1,0 +1,256 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: #f3ece6;
+        color: #6b5c4a;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    header {
+        background: #e7d8c9;
+        padding: 20px 0;
+        box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #6b5c4a;
+    }
+
+    .logo span {
+        color: #b48a72;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #6b5c4a;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #b48a72;
+    }
+
+    .inicio {
+        text-align: center;
+        padding: 120px 0 90px;
+        background: #f3ece6;
+    }
+
+    .texto-inicio h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 3.4rem;
+        color: #b48a72;
+        margin-bottom: 15px;
+    }
+
+    .texto-inicio p {
+        font-size: 1rem;
+        max-width: 620px;
+        margin: auto;
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
+
+    .botao {
+        display: inline-block;
+        padding: 12px 28px;
+        background: #e6c7ab;
+        color: #6b5c4a;
+        border-radius: 22px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .botao:hover {
+        background: #d8b49c;
+        transform: translateY(-3px);
+    }
+
+    .secao-servicos {
+        padding: 90px 0;
+        background: #f7f3ef;
+    }
+
+    .titulo-secao2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .titulo-secao2 h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.8rem;
+        color: #b48a72;
+    }
+
+    .titulo-secao2 p {
+        max-width: 600px;
+        margin: 12px auto 0;
+        line-height: 1.6;
+    }
+
+    .grade-servicos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .cartao-servico {
+        height: 100%;
+        background: #fff;
+        padding: 35px 25px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+        transition: 0.35s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .cartao-servico:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+    }
+
+    .cartao-servico img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px;
+    }
+
+    .cartao-servico p {
+    text-align:center; 
+    }
+
+    .icone-servico {
+        font-size: 2.8rem;
+        margin-bottom: 12px;
+    }
+
+    .secao-portfolio {
+        padding: 48px 0;
+    }
+
+    .grade-portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .secao-sobre {
+        padding: 48px 0;
+    }
+
+    .contato {
+        padding: 90px 0;
+        background: #f3ece6;
+    }
+
+    .titulo-secao {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .titulo-secao h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 2.6rem;
+        color: #b48a72;
+    }
+
+    .wrapper-contato {
+        display: flex;
+        gap: 45px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+
+    .info-contato {
+        flex: 1;
+    }
+
+    .formulario-contato {
+        flex: 1;
+    }
+
+    .campo-form {
+        margin-bottom: 18px;
+    }
+
+    .controle-form {
+        width: 100%;
+        padding: 12px;
+        border-radius: 18px;
+        background: #f7f3ef;
+        border: 1.5px solid #d7c5b6;
+    }
+
+    textarea.controle-form {
+        height: 120px;
+        resize: none;
+    }
+
+    .controle-form:focus {
+        border-color: #b48a72;
+        outline: none;
+    }
+
+    footer {
+        background: #e7d8c9;
+        text-align: center;
+        padding: 25px 0;
+        margin-top: 40px;
+    }
+
+  .links-sociais a {
+        color: #fff;
+        font-size: 26px;
+        transition: 0.3s;
+        text-decoration: none;
+        margin: 0 12px; 
+    }
+
+.links-sociais a:hover {
+        color: #ff4da6; 
+    }
+
+/* ------------------------ RESPONSIVO ------------------------ */
+    @media (max-width: 860px){
+      .cabecalho{flex-direction:column;gap:12px}
+      nav ul{flex-wrap:wrap;justify-content:center}
+      .wrapper-contato{flex-direction:column}
+    }
