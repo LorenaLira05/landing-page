@@ -162,15 +162,15 @@
         <div class="formulario-contato">
           <form>
             <div class="campo-form">
-              <input class="controle-form" type="text" placeholder="Seu nome">
+              <input id="nome" class="controle-form" type="text" placeholder="Seu nome">
             </div>
             <div class="campo-form">
-              <input class="controle-form" type="email" placeholder="Seu e-mail">
+              <input id="email" class="controle-form" type="email" placeholder="Seu e-mail">
             </div>
             <div class="campo-form">
-              <textarea class="controle-form" placeholder="Mensagem"></textarea>
+              <textarea id="mensagem" class="controle-form" placeholder="Mensagem"></textarea>
             </div>
-            <button class="botao">Enviar</button>
+            <button type="submit" id="btn-enviar" class="botao" onclick="validarFormulario()">Enviar</button>
           </form>
         </div>
 
@@ -197,8 +197,8 @@
 </footer>
 
   </main>
-<!-- icones -->
+ <script src="./script.js"></script>
+ 
 <script>feather.replace();</script>
 </body>
-
 </html>
